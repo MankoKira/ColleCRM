@@ -1,0 +1,19 @@
+{
+  "name": "collection-crm-common",
+  "version": "1.0.0",
+  "description": "Common modules for Collexis",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "redis": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@types/redis": "^4.0.10",
+    "typescript": "^5.0.3"
+  }
+}
