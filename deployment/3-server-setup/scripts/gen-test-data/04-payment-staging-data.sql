@@ -28,7 +28,7 @@ INSERT INTO payment_service.payment_staging (
     
     -- Payments with larger amounts (delinquent accounts)
     ('REF-2025-001242', 'LOAN10000007', 'CIF10000005', 1100.00, '2025-07-02 10:00:00', 'BANK_TRANSFER', '{"bank":"BIDV","transaction_id":"BIDV202507020001"}', false),
-    ('REF-2025-001243', 'LOAN10000018', 'CIF10000005', 400.00, '2025-07-02 11:30:00', 'BANK_TRANSFER', '{"bank":"VTB","transaction_id":"VTB202507020001"}', false),
+    ('REF-2025-001243', 'LOAN10000018', 'CIF10000005', 400.00, '2025-07-02 11:30:00', 'BANK_TRANSFER', '{"bank":"Vietinbank","transaction_id":"VTB202507020001"}', false),
     
     -- Partial payments
     ('REF-2025-001244', 'LOAN10000008', 'CIF10000006', 325.00, '2025-07-02 13:00:00', 'CASH', '{"collector_id":"COL002","receipt_number":"RC20250702001"}', false),
