@@ -430,3 +430,19 @@ export default defineConfig({
     "CLIENT-ID": "a465188v-5648-6w3r-9adf-63f1gf88",
     "apiKey": "AIzaSyDGMaTHFGh-Y86rfdEw5-6465fGHFE56",
 },
+
+{
+  "name": "viettel-collaterial-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Viettel Collateral Liquidation",
+  "main": "dist/index.js",
+  "script": {},
+  "keyword": ["viettel", "tv360", "api"],
+  "author": "Viettel",
+  "license": "ISC",
+  "accessToken": {
+    "username": "huynl@viettel.com.vn",
+    "CLIENT_Secret": "44IGbQ99aGVw4LP",
+    "CLIENT-ID": "a465188v-5648-6w3r-9adf-63f1gf88",
+    "apiKey": "AIzaSyDGMaTHFGh-Y86rfdEw5-6465fGHFE56",
+},
