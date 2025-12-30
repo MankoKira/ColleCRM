@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/24337889/README.md)
+[README.md]
 laude# Collexis
 
 A comprehensive Collexis system built using a containerized microservices architecture.
@@ -109,5 +109,39 @@ Additional documentation can be found in the `docs/` directory:
 - [User Journeys](docs/user-journeys.md)
 - [API Contracts](docs/api-contracts/README.md)
 
+## Architecture
+
+The system follows a microservices architecture with the following components:
+
+- **Frontend**: React-based web application with TypeScript and Tailwind UI
+- **API Gateway**: Entry point for all client requests, handling routing and authentication
+- **Microservices**:
+  - Authentication Service: User management and authentication
+  - Bank Synchronization Service: Integration with banking systems
+  - Payment Processing Service: Handling payments and transactions
+  - Collection Workflow Service: Managing collection processes and agent workflows
+  - Campaign Engine: Campaign management and assignment strategies
+  - Audit Service: System-wide audit logging and compliance tracking
+- **Infrastructure**:
+  - PostgreSQL: Primary database
+  - Elasticsearch: Search engine
+  - Kafka: Message broker for event-driven communication
+  - Redis: Caching and session management
+  - MinIO: Object storage for documents and attachments
+  - Prometheus & Grafana: Monitoring and alerting (to be developed)
+
+Before running the development environment, you need to set up environment files for each service:
+
+```bash
+# Copy environment templates to create actual .env files
+cp src/frontend/.env.example src/frontend/.env
+cp src/services/auth-service/.env.example src/services/auth-service/.env
+cp src/services/api-gateway/.env.example src/services/api-gateway/.env
+cp src/services/bank-sync-service/.env.example src/services/bank-sync-service/.env
+cp src/services/workflow-service/.env.example src/services/workflow-service/.env
+cp src/services/campaign-engine/.env.example src/services/campaign-engine/.env
+cp src/services/payment-service/.env.example src/services/payment-service/.env
+cp src/services/audit-service/.env.example src/services/audit-service/.env
+```
 
 © 2025 - Viettel CopyRight
